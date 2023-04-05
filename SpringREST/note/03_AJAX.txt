@@ -1,0 +1,46 @@
+03_AJAX.txt
+
+
+ * AJAX (Async Javascript And XML)
+ 
+  - 비동기 자바스크립트 외 XML (+JSON)
+  - 서버로 요청을 보내지만 웹페이지를 다시 로딩하지 않는 문법
+  - 주로 RestController에 요청을 보내 데이터만 가져오는 용도로 사용한다
+  - 서버로부터 데이터를 받을 때 자바스크립트 이벤트가 발생하고 해당 이벤트를 처리하는 방식을 사용한다  
+  
+ # XMLHttpRequest
+ 
+  - 자바스크립트의 비동기 통신을 위한 객체
+  - 인스턴스를 생성한 후 여러 설정을 마친 뒤 서버에 요청을 보낸다
+  - 요청을 보내도 페이지가 새로고침 되지 않는다
+  - open(Method, URL) : 비동기 통신의 Http Method와 URL을 설정하는 메서드
+  - send(payload) : 설정을 모두 끝마친 후 요청을 보내는 메서드, 데이터를 함께 실어 보낼 수도 있다
+  - setRequestHeader(name, value) : 비동기 요청의 헤더를 직접 설정할 수 있는 메서드
+	* content-type : application/x-www-form-urlencoded(GET/POST),
+					 application/json(모든 방식)
+				   
+ # XMLHttpRequest.readyState
+ 
+  - 1 : open()이 성공
+  - 2 : 요청에 대한 응답이 도착함
+  - 3 : 도착한 응답을 처리중
+  - 4 : 준비 완료  
+  
+ # XMLHttpRequest.status
+ 
+  - 서버에서 지정한 상태 코드가 들어 있다
+  - 서버에서 ResponseEntity로 지정한 상태코드를 통해 로직을 구성할 수 있다
+	
+  
+ 
+
+
+
+
+
+
+
+
+
+
+

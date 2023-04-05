@@ -1,0 +1,20 @@
+02_JSP 에러페이지.txt
+
+ # 각 에러 코드별로 에러페이지 가져오기
+ 
+  * web.xml
+ 
+ 	<!-- 400 에러가 발생하면 /error/wrong이라는 주소로 다시 요청보냄 -->
+	<error-page>
+		<error-code>400</error-code>
+		<location>/error/wrong</location>
+	</error-page>
+	
+   - /WEB/INF/ 밑의 경로로 포워딩하는 것이 아니라, 설정한 주소로 다시 요청을 보낸다
+   - 에러 페이지를 따로 설정하지 않으면 서버가 어떤 언어, 서버를 사용하는지 들키게 된다
+	
+	
+  * 
+	
+
+	
